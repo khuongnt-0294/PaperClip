@@ -7,12 +7,13 @@
 
 <p>
   <strong>Avatar:</strong>
-  <%= @user.avatar %>
+  <%= image_tag @user.avatar.url %>
+  <%= image_tag @user.avatar.url(:thumb) %>
 </p>
 
 <p>
   <strong>Resume:</strong>
-  <%= @user.resume %>
+  <%= @user.resume_file_name %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
