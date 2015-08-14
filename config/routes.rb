@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'download/index'
+
+  get 'download/zip'
+
+  get 'download/pdf'
+
+  get 'download/doc'
+
   resources :users
   root "users#index"
   # The priority is based upon order of creation: first created -> highest priority.
