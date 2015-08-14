@@ -19,6 +19,7 @@
         <td><%= image_tag user.avatar.url %></td>
         <td><%= image_tag user.avatar.url(:thumb) %></td>
         <td><%= user.resume_file_name %></td>
+        <td><%= image_tag user.avatar.url %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
